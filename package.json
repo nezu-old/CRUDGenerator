@@ -1,6 +1,6 @@
 {
   "name": "@dumbaspl/crudgenerator",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "generates mysql+php CRUDs because my teacher thinks it's ok for us to do the same thing over and over again",
   "main": ".//index.js",
   "bin": {
