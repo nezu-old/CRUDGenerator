@@ -100,7 +100,7 @@ function generateHtmlTable(table: Table, config: Config): string {
         <td>
             <a href="?${Constants.action_type_paramter_name}=delete&${Constants.section_selector_paramter_name}=${table.name}&${table.primary_key}=<?= $row["${table.primary_key}"] ?>">${config.delete_text}</a>
             <a href="?${Constants.action_type_paramter_name}=edit&${Constants.section_selector_paramter_name}=${table.name}&${table.primary_key}=<?= $row["${table.primary_key}"] ?>">${config.edit_text}</a>
-        <td>
+        </td>
     </tr>
     <?php endwhile; ?>
 </table>
