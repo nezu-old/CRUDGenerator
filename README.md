@@ -8,7 +8,7 @@ A siple php+mysql CRUD generator written in TypeScript
 
 ### from source
 1. clone the repository
-2. install all dependencies using npm
+2. install all dependencies using `npm i`
 3. build with `npm run build`
 4. install globally using `npm i -g`
 5. run using `crudgenerator`
@@ -31,7 +31,7 @@ example configuration can be found [here](./config.json)
 ## purpose
 This project exists because i got mad the the fact that certain teaches at my school force us to do the same thing over and over again with very minimal changes.
 
-## not about code quality
+## note about code quality
 This project was meant as a quick and dirty way to not have to do the the same thing all the time.  
 The code isn't documented and the overall readability is very bad.   
 This is not my normal coding style, I just didn't want to spend any more time than nectary since it won't be used all that much anyway.
