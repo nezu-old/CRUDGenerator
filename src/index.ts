@@ -12,7 +12,7 @@ program
     .requiredOption('-o, --output <directory>', 'Output directory')
     .option('-d, --database', 'Also generate database')
     .option('-f, --force', 'Force override files')
-    .version('0.0.2', '-v, --version');
+    .version('0.1.0', '-v, --version');
 program.parse(process.argv);
 
 const file = fs.readFileSync(program.config);
