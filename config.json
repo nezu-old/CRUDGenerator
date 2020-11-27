@@ -65,7 +65,7 @@
                     "display_name": "Przedmiot",
                     "reference_target": "subject.id",
                     "reference_column_names": {
-                        "name": "imię"
+                        "name": "nazwa przedmiotu"
                     },
                     "reference_main_column": "name"
                 },
@@ -75,7 +75,7 @@
                     "display_name": "Uczeń",
                     "reference_target": "student.id",
                     "reference_column_names": {
-                        "name": "nazwa przedmiotu"
+                        "name": "imię"
                     },
                     "reference_main_column": "name"
                 }
