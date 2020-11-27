@@ -43,6 +43,18 @@ ${config.tables.filter(table => config.tables.filter(t => t.columns.map(col =>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>${config.page_title}</title>
+    <style>
+    td, th {
+        border: 1px solid black;
+        padding: 10px;
+    }
+    table {
+        border-collapse: collapse;
+    }
+    input, select, textarea {
+        margin: 5px;
+    }
+    </style>
 </head>
 <body>
 <?php if($${Constants.edit_var_name} == null) { ?>
