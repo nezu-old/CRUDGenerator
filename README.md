@@ -4,7 +4,7 @@ A siple php+mysql CRUD generator written in TypeScript
 ## installing
 
 ### using npm
-- TODO: add npm package
+`npm i @dumbaspl/crudgenerator -g`
 
 ### from source
 1. clone the repository

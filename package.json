@@ -1,10 +1,10 @@
 {
-  "name": "crudgenerator",
+  "name": "@dumbaspl/crudgenerator",
   "version": "0.0.1",
   "description": "generates mysql+php CRUDs because my teacher thinks it's ok for us to do the same thing over and over again",
   "main": ".//index.js",
   "bin": {
-    "crudgenerator": "./dist/index.js"
+    "crudgenerator": "dist/index.js"
   },
   "scripts": {
     "start": "node -r ts-node/register src/index.ts",
