@@ -1,0 +1,85 @@
+{
+    "connection_settings": {
+        "host": "localhost",
+        "username": "root",
+        "password": "",
+        "database": "private_lessons"
+    },
+    "page_title": "System korepetycji",
+    "delete_text": "usuń",
+    "edit_text": "edytuj",
+    "submit_text": "wyślij",
+    "tables": [
+        {
+            "name": "student",
+            "primary_key": "id",
+            "insert_text": "dodaj ucznia",
+            "display_name": "Uczniowie",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "primary"
+                },
+                {
+                    "name": "name",
+                    "type": "string",
+                    "display_name": "Imię ucznia"
+                }
+            ]
+        },
+        {
+            "name": "subject",
+            "primary_key": "id",
+            "insert_text": "dodaj przedmiot",
+            "display_name": "Przedmioty",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "primary"
+                },
+                {
+                    "name": "name",
+                    "type": "string",
+                    "display_name": "Nazwa przedmiotu"
+                }
+            ]
+        },
+        {
+            "name": "meeting",
+            "primary_key": "id",
+            "display_name": "Terminy",
+            "insert_text": "dodaj termin",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "primary"
+                },
+                {
+                    "name": "time",
+                    "type": "datetime",
+                    "display_name": "data"
+                },
+                {
+                    "name": "subject_id",
+                    "type": "reference",
+                    "display_name": "Przedmiot",
+                    "reference_target": "subject.id",
+                    "reference_column_names": {
+                        "name": "imię"
+                    },
+                    "reference_main_column": "name"
+                },
+                {
+                    "name": "student_id",
+                    "type": "reference",
+                    "display_name": "Uczeń",
+                    "reference_target": "student.id",
+                    "reference_column_names": {
+                        "name": "nazwa przedmiotu"
+                    },
+                    "reference_main_column": "name"
+                }
+            ]
+        }
+    ]
+}
